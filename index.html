@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Viaje de Momentos Especiales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-top: 20px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #e60073;
+            font-size: 36px;
+            margin-top: 10px;
+        }
+        p {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .question {
+            font-size: 24px;
+            color: #4a4a4a;
+            margin-top: 30px;
+        }
+        .instructions {
+            font-size: 14px;
+            color: #777;
+            margin-top: 10px;
+        }
+        .buttons button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .buttons button:hover {
+            background-color: #555;
+        }
+    </style>
+    <script>
+        function showMemory(step) {
+            const sections = ['initialText', 'memory1', 'memory2', 'memory3', 'memory4', 'memory5', 'memory6', 'memory7', 'memory8', 'memory9', 'memory10'];
+            sections.forEach(section => document.getElementById(section).style.display = "none");
+            document.getElementById(step).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <h2>Yaviela</h2>
+    <h1>Como haz estado hoy?...</h1>
+    <p id="initialText">He estado pensando en ti, " deseo que sepas algo".</p>
+    
+    <button onclick="showMemory('memory1')" style="background-color: #4a90e2; color: white; padding: 10px 25px; border: none; font-size: 18px; border-radius: 5px; cursor: pointer; margin-top: 20px;">
+        Quiero leerte
+    </button>
+
+    <div id="memory1" style="display: none;">
+        <p class="question">❦</p>
+        <p>Oye, hoy quiero hablarte con el corazón en la mano….</p>
+        <button onclick="showMemory('memory2')">Siguiente</button>
+        <p class="instructions">Toca "Siguiente" para continuar.</p>
+    </div>
+
+    <div id="memory2" style="display: none;">
+        <p class="question">❦</p>
+        <p>Desde que apareciste en mi vida, siento que hasta el aire es distinto.</p>
+        <button onclick="showMemory('memory3')">Siguiente</button>
+        <p class="instructions">Toca "Siguiente" para continuar.</p>
+    </div>
+
+    <div id="memory3" style="display: none;">
+        <p class="question">❦</p>
+        <p>Eres mi sorpresa favorita, y agradezco al destino cada día por cruzarnos.</p>
+        <button onclick="showMemory('memory4')">Siguiente</button>
+        <p class="instructions">Toca "Siguiente" para continuar.</p>
+    </div>
+
+    <div id="memory4" style="display: none;">
+        <p class="question">❦</p>
+        <p>Cuando pienso en ti, no solo me siento feliz; siento que mi vida está mejor enfocada.</p>
+        <button onclick="showMemory('memory5')">Siguiente</button>
+        <p class="instructions">Toca "Siguiente" para continuar.</p>
+    </div>
+
+    <div id="memory5" style="display: none;">
+        <p class="question">❦</p>
+        <p>Tú le das sentido a los pequeños momentos, y eso es un regalo raro y valioso, digo raro por que no estamos cercas, y aun asi te siento.</p>
+        <button onclick="showMemory('memory6')">Siguiente</button>
+        <p class="instructions">Toca "Siguiente" para continuar.</p>
+    </div>
+
+    <div id="memory6" style="display: none;">
+        <p class="question">❦</p>
+        <p>Hay días en que me asombra cómo una persona puede hacer que el mundo se sienta en calma.</p>
+        <button onclick="showMemory('memory7')">Siguiente</button>
+        <p class="instructions">Toca "Siguiente" para continuar.</p>
+    </div>
+
+    <div id="memory7" style="display: none;">
+        <p class="question">❦</p>
+        <p>No sabes el orgullo que siento de coincidir contigo; eres de esas personas que no se encuentran dos veces.</p>
+        <button onclick="showMemory('memory8')">Siguiente</button>
+        <p class="instructions">Toca "Siguiente" para continuar.</p>
+    </div>
+
+    <div id="memory8" style="display: none;">
+        <p class="question">❦</p>
+        <p>Ser testigo de tu vida y de tu fuerza es uno de mis mayores privilegios.</p>
+        <button onclick="showMemory('memory9')">Siguiente</button>
+        <p class="instructions">Toca "Siguiente" para continuar.</p>
+    </div>
+
+    <div id="memory9" style="display: none;">
+        <p class="question">❦</p>
+        <p>Si alguien merece lo mejor en este mundo, eres tú, por lo especial y auténtica que eres.</p>
+        <button onclick="showMemory('memory10')">Siguiente</button>
+        <p class="instructions">Toca "Siguiente" para continuar.</p>
+    </div>
+
+    <div id="memory10" style="display: none;">
+        <p class="question">❦</p>
+        <p>Mi Yavi, por más lejos que estés, sigues siendo esa persona que le da sentido a todo. Te quiero y me siento bendecido de ser parte de tu historia. 🫶</p>
+        <p class="instructions">Este es el último mensaje, y cada palabra es con amor.</p>
+    </div>
+</body>
+</html>
